@@ -63,7 +63,7 @@ bun preview
 
 ## Project Structure
 
-````plaintext
+```plaintext
 my-app/
 ├── public/              # Public assets (e.g., images, icons, etc.)
 ├── src/                 # Source code
@@ -75,21 +75,19 @@ my-app/
 ├── package.json         # Project metadata and scripts
 ├── tailwind.config.js   # Tailwind CSS configuration
 └── vite.config.js       # Vite configuration
+```
 
+## tailwind.config.js
 
-``` js
-// tailwind.config.js
+```js
 module.exports = {
-content: [
-"./index.html",
-"./src/**/*.{js,ts,jsx,tsx}",
-],
-theme: {
-extend: {},
-},
-plugins: [],
-}
-````
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
 
 ## Adding Tailwind CSS Styles
 
