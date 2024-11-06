@@ -27,9 +27,16 @@ This starter template sets up a development environment using **Vite**, **React*
 ### Prerequisites
 
 1. **Bun**: Ensure Bun is installed. If not, you can install it with the following command:
+
    ```bash
    curl -fsSL https://bun.sh/install | bash
    ```
+
+2. Verify Bun installation:
+
+````bash
+bun --version
+```
 
 ## Installation
 
@@ -38,16 +45,17 @@ Clone the repository:
 ``` bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-```
+````
 
 ## Install dependencies with Bun:
-``` bash`
+
+```bash
 bun install
 ```
 
 ## Development
 
-``` bash`
+```bash
 bun dev
 bun build
 bun preview
@@ -55,7 +63,7 @@ bun preview
 
 ## Project Structure
 
-```plaintext
+````plaintext
 my-app/
 ├── public/              # Public assets (e.g., images, icons, etc.)
 ├── src/                 # Source code
@@ -81,13 +89,13 @@ extend: {},
 },
 plugins: [],
 }
-```
+````
 
 ## Adding Tailwind CSS Styles
 
 In src/index.css, import Tailwind CSS directives to enable its utility classes in the project:
 
-``` css
+```css
 /* src/index.css */
 @tailwind base;
 @tailwind components;
@@ -96,16 +104,17 @@ In src/index.css, import Tailwind CSS directives to enable its utility classes i
 
 ## Example Component
 
-``` jsx
+```jsx
 // src/App.jsx
-import './index.css';
+import "./index.css";
 function App() {
-return (
-
-<div className="flex items-center justify-center min-h-screen bg-gray-100">
-<h1 className="text-3xl font-bold text-blue-500">Hello, Vite + React + Tailwind CSS + Bun!</h1>
-</div>
-);
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-3xl font-bold text-blue-500">
+        Hello, Vite + React + Tailwind CSS + Bun!
+      </h1>
+    </div>
+  );
 }
 export default App;
 ```
