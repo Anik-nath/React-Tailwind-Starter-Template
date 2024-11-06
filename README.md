@@ -35,35 +35,41 @@ This starter template sets up a development environment using **Vite**, **React*
 
 Clone the repository:
 
-\(``` bash`...\ ``\)
-Copy code
+``` bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-Install dependencies with Bun:
+```
 
-\(``` bash`...\ ``\)
-
+## Install dependencies with Bun:
+``` bash`
 bun install
+```
+
+## Development
+
+``` bash`
 bun dev
 bun build
 bun preview
+```
 
 ## Project Structure
 
+```plaintext
 my-app/
-├── public/ # Public assets (e.g., images, icons, etc.)
-├── src/ # Source code
-│ ├── App.jsx # Main React component
-│ ├── index.css # Tailwind CSS imports
-│ ├── main.jsx # App entry point
-│ └── components/ # Any additional components
-├── .gitignore # Files and directories to ignore in Git
-├── package.json # Project metadata and scripts
-├── tailwind.config.js # Tailwind CSS configuration
-└── vite.config.js # Vite configuration
+├── public/              # Public assets (e.g., images, icons, etc.)
+├── src/                 # Source code
+│   ├── App.jsx          # Main React component
+│   ├── index.css        # Tailwind CSS imports
+│   ├── main.jsx         # App entry point
+│   └── components/      # Any additional components
+├── .gitignore           # Files and directories to ignore in Git
+├── package.json         # Project metadata and scripts
+├── tailwind.config.js   # Tailwind CSS configuration
+└── vite.config.js       # Vite configuration
 
-\(``` js`...\ ``\)
 
+``` js
 // tailwind.config.js
 module.exports = {
 content: [
@@ -75,27 +81,24 @@ extend: {},
 },
 plugins: [],
 }
+```
 
 ## Adding Tailwind CSS Styles
 
 In src/index.css, import Tailwind CSS directives to enable its utility classes in the project:
 
-\(``` css`...\ ``\)
-
-/_ src/index.css _/
+``` css
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
 
 ## Example Component
 
-Here’s a sample component to get started with Tailwind CSS styling:
-
-\(``` jsx`...\ ``\)
-
+``` jsx
 // src/App.jsx
 import './index.css';
-
 function App() {
 return (
 
@@ -104,7 +107,7 @@ return (
 </div>
 );
 }
-
 export default App;
+```
 
 Happy coding with Vite, React, Bun, and Tailwind CSS! 🎉
