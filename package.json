@@ -1,8 +1,9 @@
 {
-  "name": "seopagetask",
+  "name": "react-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Anik Deb Nath <https://aniknath.netlify.app/>",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
