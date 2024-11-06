@@ -34,7 +34,7 @@ This starter template sets up a development environment using **Vite**, **React*
 
 2. Verify Bun installation:
 
-````bash
+```bash
 bun --version
 ```
 
@@ -42,10 +42,10 @@ bun --version
 
 Clone the repository:
 
-``` bash
+```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-````
+```
 
 ## Install dependencies with Bun:
 
